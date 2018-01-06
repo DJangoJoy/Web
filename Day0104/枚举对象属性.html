@@ -6,14 +6,6 @@
 </head>
 <body>
     <script type="text/javascript">
-        function MyFunc(name) {
-            return ("hello "+name+" !");
-        };
-        document.writeln(MyFunc("DJango"))
-    </script>
-<hr>
-<p>对象可以添加属性，也可以添加函数，属于一个对象的函数称为其方法</p>
-    <script type="text/javascript">
         var myData={
             name:"DJango",
             weather:"sunny",
@@ -22,7 +14,14 @@
                 document.writeln("Today is "+this.weather+".")
             }
         };
-        myData.printMessages();
+       for (var prop in myData){
+           document.writeln("Name:"+prop+"value:"+myData[prop]);
+
+       };
+
     </script>
+    <hr>
+    <p>myData[prop] 的形式类似数组的引用，for....in循环代码块中的语句会对myData对象的每一个属性执行一次，在没
+    一次迭代过程中所要处理的属性名会被赋给prop变量。</p>
 </body>
 </html>

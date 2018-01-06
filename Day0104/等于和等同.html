@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var myDate1={
+            name:"DJango",
+            weather:"sunny"
+        };
+
+        var myDate2={
+            name:"DJango",
+            weather:"sunny"
+        };
+          var myDate3=myDate2;
+
+
+          var test1=myDate1==myDate2;
+          var  test2=myDate2==myDate3;
+          var  test3=myDate1===myDate2;
+          var  test4=myDate2===myDate3;
+
+          document.writeln("Test 1: "+test1+"Test 2: "+test2);
+          document.writeln("Test 3: "+test3+"Test 4"+test4);
+          <!--等同（= = =）是值和类型都相同，而等于（= =）只是值相同-->
+    </script>
+</body>
+</html>

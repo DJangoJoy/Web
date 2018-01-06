@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var  myData={
+            name:"DJango",
+            weather:"sunny",
+        };
+
+        var hasName= "name" in myData;
+        var hasDate="date" in  myData;
+
+        document.writeln("hasName "+hasName);
+        document.writeln("hadDate "+hasDate);
+        <!--在这里hasName变量的属性会变成true ，而hasDate变量的属性会变成false-->
+    </script>
+
+</body>
+</html>

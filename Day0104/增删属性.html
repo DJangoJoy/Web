@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var myData={
+            name: "DJango",
+            weather:"sunny",
+        };
+        myData.dayOfWeek="Monday";
+        myData.sayHello=function () {
+            document.writeln("hello")
+        };
+        <!--上面分别增加了dayOFWeek新属性和sayHello新方法-->
+
+        <!--对象的属性和方法可以用delete关键字来删除-->
+        delete myData.name;
+        delete  myData["weather"];
+        delete  myData.sayHello();
+    </script>
+</body>
+</html>
