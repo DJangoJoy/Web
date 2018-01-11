@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JSP计算器</title>
+    <style>
+        .output{
+            font-weight: bold;
+        }
+        #payment{
+            text-decoration: underline;
+        }
+        #graph{
+            border:solid black 1px;
+        }
+        th,td{
+            vertical-align: top;
+        }
+    </style>
 </head>
 <body>
     <script type="text/javascript">
+        function Point(x,y) {
+            this.x=x;
+            this.y=y;
+        }
+
+        var p=new Point(1,1);
         points.dist=function () {
             var p1=this[0];
             var p2=this[1];
