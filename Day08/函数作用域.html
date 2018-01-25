@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var scope="global";
+        function f() {
+            document.writeln(scope);
+            var scope="local";
+        }
+
+        f();
+    </script>
+
+</body>
+</html>

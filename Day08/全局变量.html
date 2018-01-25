@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script type="text/javascript">
+            var scope="global";
+            function checkscope() {
+                var scope="local";
+                function nested() {
+                    var  scope="nested_scope";
+                    return scope;
+                }
+
+                return scope;
+               // return nested();
+            }
+
+            var l=checkscope();
+            document.writeln(scope);
+            document.writeln(l);
+
+
+
+
+        </script>
+
+</body>
+</html>
